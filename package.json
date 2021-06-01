@@ -2,11 +2,18 @@
   "name": "quinder",
   "version": "1.0.0",
   "description": "Tinder for quotes",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
-    "build": ""
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "Stef Geraets",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "sass": "^1.34.0"
+  }
 }

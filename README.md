@@ -9,7 +9,7 @@ Tinder for quotes. Save the best ones for later.
 
 ## Todo
 
-- [ ] Project skeleton
+- [x] Project skeleton
 - [ ] Template and styling
 - [ ] Get quotes
 - [ ] Display Quotes
