@@ -6,6 +6,21 @@ Tinder for quotes. Save the best ones for later.
 
 ## Usage
 
+install
+```
+npm install
+```
+
+Local development
+```
+npm run dev
+```
+
+Build project
+```
+npm run build
+```
+
 
 ## Todo
 
