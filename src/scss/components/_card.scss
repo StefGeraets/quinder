@@ -1,0 +1,42 @@
+.quote {
+  background: $c-white;
+  border-radius: 12px;
+  box-shadow: $shadow-xl;
+  padding: 20px;
+}
+
+.quote-box {
+  background: $gradient-200;
+  border-radius: 8px;
+  padding: 24px;
+  color: $c-white;
+}
+
+.quote-title {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.quote-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.quote-author {
+  font-weight: 600;
+}
+
+.quote-tag {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  span {
+    border: 1px solid $c-orange-700;
+    color: $c-orange-700;
+    padding: 2px 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,20 @@
+.btn {
+  border: none;
+  background: $c-white;
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  box-shadow: $shadow;
+  color: $c-gray-400;
+}
+
+.btn-dislike {
+  color: $c-red-700;
+}
+
+.btn-like {
+  color: $c-green-600;
+}

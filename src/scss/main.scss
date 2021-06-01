@@ -1,5 +1,18 @@
-$color: tomato;
+@charset 'utf-8';
 
-h1 {
-  color: $color;
-}
+// Utils
+@import './utils/variables';
+
+// Base
+@import './base/normalize';
+@import './base/typography';
+
+// Components
+@import './components/actions';
+@import './components/buttons';
+@import './components/card';
+
+// Layout
+@import './layout/page';
+@import './layout/main';
+@import './layout/sidebar';

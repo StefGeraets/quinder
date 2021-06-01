@@ -1,0 +1,12 @@
+.main {
+  background: $c-gray-100;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote-container {
+  max-width: 25vw;
+}
