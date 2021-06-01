@@ -30,3 +30,5 @@ npm run build
 - [ ] Display Quotes
 - [ ] Save quotes
 - [ ] Filter quotes
+
+Quote API to use: [https://goquotes.docs.apiary.io/](https://goquotes.docs.apiary.io/#)
