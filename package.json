@@ -1,0 +1,12 @@
+{
+  "name": "quinder",
+  "version": "1.0.0",
+  "description": "Tinder for quotes",
+  "main": "index.html",
+  "scripts": {
+    "build": ""
+  },
+  "keywords": [],
+  "author": "Stef Geraets",
+  "license": "ISC"
+}
