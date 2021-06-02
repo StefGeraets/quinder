@@ -26,9 +26,9 @@ npm run build
 
 - [x] Project skeleton
 - [ ] Template and styling
-- [ ] Get quotes
-- [ ] Display Quotes
-- [ ] Save quotes
+- [x] Get quotes
+- [x] Display Quotes
+- [x] Save quotes
 - [ ] Filter quotes
 
 Quote API to use: [https://goquotes.docs.apiary.io/](https://goquotes.docs.apiary.io/#)
