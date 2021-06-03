@@ -1,7 +1,7 @@
 import * as db from '../data/storage';
 import * as quotes from '../data/quotes';
 
-import { handleError } from '../utils/utils'
+import * as utils from '../utils/utils'
 
 import * as ui from './quoteDisplay'
 
@@ -10,18 +10,22 @@ export async function displayQuote() {
     .then((data) => {
       db.setCurrent(data)
       ui.buildCard(data)
+      utils.enableButtons()
     })
-    .catch(handleError)
+    .catch(utils.handleError)
 }
 
 export function like() {
   const currentQuote = db.getCurrent()
   db.saveQuote(currentQuote)
+  utils.disableButtons()
   displayQuote()
+  ui.addQuoteItem(currentQuote)
 }
 
 export function dislike() {
   const currentQuote = db.getCurrent()
   db.rejectQuote(currentQuote.tags)
+  utils.disableButtons()
   displayQuote()
 }

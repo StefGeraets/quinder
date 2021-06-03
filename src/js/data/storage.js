@@ -4,7 +4,7 @@ export function init() {
 }
 
 export function setCurrent(quote) {
-  localStorage.setObject('current', quote)
+  localStorage.setJSON('current', quote)
 }
 
 export function getCurrent() {
@@ -14,7 +14,7 @@ export function getCurrent() {
 export function saveQuote(quote) {
   const likes = localStorage.getJSON('liked')
   likes.push(quote);
-  localStorage.setObject('liked', likes)
+  localStorage.setJSON('liked', likes)
 }
 
 export function rejectQuote(tags) {
@@ -35,10 +35,19 @@ export function rejectQuote(tags) {
     }
   })
 
-  localStorage.setObject('disliked', dislikes)
+  localStorage.setJSON('disliked', dislikes)
 }
 
-Storage.prototype.setObject = function(key, value) {
+export function setAllTags(tags) {
+  const tagsArray = tags.map(tag => tag.name)
+  localStorage.setJSON('tags', tagsArray)
+}
+
+export function getAllTags() {
+  return localStorage.getJSON('tags')
+}
+
+Storage.prototype.setJSON = function(key, value) {
   this.setItem(key, JSON.stringify(value))
 }
 

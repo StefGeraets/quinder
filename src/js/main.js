@@ -1,19 +1,25 @@
 import * as db from './data/storage';
 
-import * as handle from './ui/handleQuote';
+import * as quoteUI from './ui/handleQuote';
+import * as tagsUI from './ui/handleTags';
 
 const likeBtn    = document.querySelector('.btn-like'),
       dislikeBtn = document.querySelector('.btn-dislike');
 
-db.init()
-handle.displayQuote()
+function init() {
+  db.init()
+  tagsUI.displayTags()
+  quoteUI.displayQuote()
+}
+
+init()
 
 likeBtn.addEventListener('click', (e) => {
   e.preventDefault()
-  handle.like()
+  quoteUI.like()
 })
 
 dislikeBtn.addEventListener('click', (e) => {
   e.preventDefault()
-  handle.dislike()
+  quoteUI.dislike()
 })

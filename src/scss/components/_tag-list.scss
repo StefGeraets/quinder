@@ -8,7 +8,9 @@
   }
   ul {
     @include reset-list;
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
     li {
       @include tag;
     }

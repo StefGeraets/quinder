@@ -30,8 +30,8 @@ npm run build
 - [x] Get quotes
 - [x] Display Quote
 - [x] Save quotes
-- [ ] Display liked quotes
-- [ ] List Quote tags
+- [x] Display liked quotes
+- [x] List Quote tags
 - [ ] Filter quotes
 
 Quote API to use: [https://github.com/lukePeavey/quotable](https://github.com/lukePeavey/quotable)
