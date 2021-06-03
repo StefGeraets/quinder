@@ -1,0 +1,17 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin tag {
+  font-weight: $semi;
+  background: $c-orange-600;
+  color: $c-white;
+  padding: 2px 4px;
+  font-size: 0.625rem;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}

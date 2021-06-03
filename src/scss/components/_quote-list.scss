@@ -1,0 +1,40 @@
+.quote-list {
+  flex: 1;
+  padding: 16px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quote-item {
+  box-shadow: $shadow-sm;
+  background: $c-white;
+  border-radius: 8px;
+  padding: 16px;
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  footer {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    em {
+      font-size: 0.75rem;
+      &:before {
+        content:"-";
+        margin-right: 4px;
+      }
+    }    
+  }
+  ul {
+    @include reset-list;
+    li {
+      @include tag;
+      background: $c-gray-500;
+    }
+  }
+}

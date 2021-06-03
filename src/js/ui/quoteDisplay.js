@@ -20,3 +20,7 @@ function renderTags(tags) {
   quoteTags.innerHTML = ''
   tags.map(tag => quoteTags.innerHTML += `<span>${tag}</span>`)
 }
+
+export function addQuoteItem(content) {
+  
+}

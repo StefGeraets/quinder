@@ -1,0 +1,16 @@
+.quote-tag-list {
+  padding: 16px;
+  box-shadow: $shadow-negative;
+  position: relative;
+  z-index: 1;
+  h4 {
+    margin: 8px 0;
+  }
+  ul {
+    @include reset-list;
+    
+    li {
+      @include tag;
+    }
+  }
+}

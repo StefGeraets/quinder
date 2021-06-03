@@ -28,6 +28,7 @@ $gradient-100: linear-gradient(to right, #ff0084, #33001b);
 $gradient-200: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 
 // Shadows
+$shadow-negative: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06); 
 $shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 $shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
 $shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

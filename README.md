@@ -25,10 +25,13 @@ npm run build
 ## Todo
 
 - [x] Project skeleton
-- [ ] Template and styling
+- [x] Template and styling desktop
+- [ ] Template and styling responsive
 - [x] Get quotes
-- [x] Display Quotes
+- [x] Display Quote
 - [x] Save quotes
+- [ ] Display liked quotes
+- [ ] List Quote tags
 - [ ] Filter quotes
 
-Quote API to use: [https://goquotes.docs.apiary.io/](https://goquotes.docs.apiary.io/#)
+Quote API to use: [https://github.com/lukePeavey/quotable](https://github.com/lukePeavey/quotable)

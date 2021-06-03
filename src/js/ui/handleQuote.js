@@ -3,13 +3,13 @@ import * as quotes from '../data/quotes';
 
 import { handleError } from '../utils/utils'
 
-import * as card from '../ui/quoteCard'
+import * as ui from './quoteDisplay'
 
 export async function displayQuote() {
   await quotes.getQuote(100)
     .then((data) => {
       db.setCurrent(data)
-      card.buildCard(data)
+      ui.buildCard(data)
     })
     .catch(handleError)
 }
