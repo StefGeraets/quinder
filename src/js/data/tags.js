@@ -14,7 +14,7 @@ async function getTags() {
 export async function setTags() {
   await getTags()
     .then((data) => {
-      db.setAllTags(data)
+      db.setTags(data)
     })
     .catch(handleError)
 }

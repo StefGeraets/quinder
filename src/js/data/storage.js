@@ -38,12 +38,16 @@ export function rejectQuote(tags) {
   localStorage.setJSON('disliked', dislikes)
 }
 
-export function setAllTags(tags) {
+export function getDisliked() {
+  return localStorage.getJSON('disliked')
+}
+
+export function setTags(tags) {
   const tagsArray = tags.map(tag => tag.name)
   localStorage.setJSON('tags', tagsArray)
 }
 
-export function getAllTags() {
+export function getTags() {
   return localStorage.getJSON('tags')
 }
 

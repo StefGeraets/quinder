@@ -3,29 +3,31 @@ import * as quotes from '../data/quotes';
 
 import * as utils from '../utils/utils'
 
-import * as ui from './quoteDisplay'
+import * as quoteUI from './quoteDisplay'
+import * as tagUI from './handleTags'
 
 export async function displayQuote() {
-  await quotes.getQuote(100)
+  await quotes.getQuote()
     .then((data) => {
       db.setCurrent(data)
-      ui.buildCard(data)
+      quoteUI.buildCard(data)
       utils.enableButtons()
     })
     .catch(utils.handleError)
 }
 
 export function like() {
+  utils.disableButtons()
   const currentQuote = db.getCurrent()
   db.saveQuote(currentQuote)
-  utils.disableButtons()
   displayQuote()
-  ui.addQuoteItem(currentQuote)
+  quoteUI.addQuoteItem(currentQuote)
 }
 
 export function dislike() {
+  utils.disableButtons()
   const currentQuote = db.getCurrent()
   db.rejectQuote(currentQuote.tags)
-  utils.disableButtons()
+  tagUI.removeTag(currentQuote.tags)
   displayQuote()
 }

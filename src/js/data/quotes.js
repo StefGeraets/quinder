@@ -1,8 +1,10 @@
-const quoteApiUrlRandom = "https://api.quotable.io/random",
-      maxLength = 100
+import { getTags } from './storage';
 
-export async function getQuote(length = maxLength) {
-  const response = await fetch(`${quoteApiUrlRandom}?${length}`)
+const quoteApiUrlRandom = "https://api.quotable.io/random"
+
+export async function getQuote() {
+  const tagsQuery = getTags()
+  const response = await fetch(`${quoteApiUrlRandom}?tags=${tagsQuery.map(tag => tag).join('|')}`)
   const data = await response.json()
 
   return data
