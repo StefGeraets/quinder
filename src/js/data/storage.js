@@ -43,7 +43,7 @@ export function getDisliked() {
 }
 
 export function setTags(tags) {
-  const tagsArray = tags.map(tag => tag.name)
+  const tagsArray = tags.filter((tag) => tag.quoteCount > 0).map(tag => tag.name)
   localStorage.setJSON('tags', tagsArray)
 }
 

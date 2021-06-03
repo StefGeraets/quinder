@@ -15,7 +15,10 @@ function showTags() {
 
 export function removeTag(tags) {
   const currentTags = db.getTags()
-  const tagsRemoved = currentTags.filter(val => !tags.includes(val))
+  let tagsRemoved = currentTags
+  if (currentTags.length != 1) {
+    tagsRemoved = currentTags.filter(val => !tags.includes(val))
+  }
 
   localStorage.setItem('tags', JSON.stringify(tagsRemoved))
   tagList.innerHTML = ''
